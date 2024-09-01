@@ -1,0 +1,31 @@
+.addButton{
+    width: 140px;
+    height: 46px;
+    cursor: pointer;
+}
+
+.svgIconAdd {
+    height: 16px;
+    width: 16px;
+    stroke: var(--white);
+    margin-right: 10px;
+}
+
+ .addButton:hover .svgIconAdd {
+    stroke: var(--lightGreenHover);
+   
+} 
+@media screen and (min-width: 768px) {
+    .addButton {
+     font-size: 16px;
+     width: 178px;
+     height: 60px;
+    }
+
+    .svgIconAdd {
+        height: 24px;
+        width: 24px;
+    }
+
+
+}

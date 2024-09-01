@@ -1,0 +1,394 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.avatarWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.svgIconUpload {
+  stroke: #2f2f2f;
+  fill: none;
+  width: 18px;
+  height: 18px;
+}
+.avatar {
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.settingsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.leftDesktopWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.hiddenFileInput {
+  display: none;
+}
+.fileLabel {
+  width: 151px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+}
+
+.genderWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--grey);
+}
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  color: var(--dark-grey);
+}
+.normaFormula {
+  font-weight: 700;
+  color: var(--green);
+  width: 149px;
+}
+.radiobuttonWrapper {
+  display: flex;
+  gap: 20px;
+}
+.radiobuttonContainer {
+  display: flex;
+  gap: 10px;
+}
+.customRadio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.customRadio input {
+  display: none; /* Скрываем стандартную радиокнопку */
+}
+
+.checkmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid var(--green);
+  border-radius: 100%;
+}
+
+.customRadio input:checked + .checkmark {
+  background-color: var(--white); /* Цвет фона при выборе */
+}
+
+.checkmark::after {
+  content: "";
+  display: none;
+}
+
+.customRadio input:checked + .checkmark::after {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: var(--green); /* Цвет внутреннего круга */
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 24px;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+.subInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+.infoInputContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.formValid {
+  color: #ef5050;
+  font-size: 11px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+.formValidName {
+  color: #ef5050;
+  font-size: 11px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-align-last: center;
+}
+.alertPosition {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+input.error,
+.error:hover,
+.error:focus,
+.error:active {
+  border-color: #ef5050;
+}
+.input {
+  border: 1px solid rgba(47, 47, 47, 0.15);
+  border-radius: 15px;
+  padding: 14px 0 14px 16px;
+  width: 303px;
+  height: 46px;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  color: var(--dark-grey);
+}
+.input:active {
+  border: 1px solid rgba(47, 47, 47, 0.4);
+}
+.normaWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.formulaWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.formulaSubwrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.normaAsterisk {
+  color: var(--green);
+}
+.footnote {
+  color: var(--green);
+  font-size: 20px;
+}
+.normaTextArea {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  color: rgba(47, 47, 47, 0.6);
+
+  border: 1px solid rgba(47, 47, 47, 0.15);
+  border-radius: 15px;
+  padding: 16px;
+  width: 303px;
+  height: 140px;
+}
+.rightDesktopWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.metricsWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+}
+.metricsSubWrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+.waterAmountWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+}
+.amountField {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  width: 303px;
+}
+.textContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.svgExclamation {
+  fill: var(--green);
+  width: 18px;
+  height: 18px;
+}
+.volumeWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  width: 303px;
+  position: relative;
+}
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 40px;
+  width: 116px;
+  height: 46px;
+}
+@media screen and (max-width: 374px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .input {
+    width: auto;
+    height: auto;
+  }
+
+  .normaFormula {
+    width: auto;
+  }
+  .normaTextArea {
+    width: auto;
+    height: auto;
+  }
+  .amountField {
+    width: auto;
+  }
+
+  .volumeWrapper {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 568px;
+  }
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .fileLabel {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .formValid {
+    font-size: 12px;
+  }
+  .input {
+    font-size: 16px;
+    line-height: 1.5;
+
+    padding: 16px 0 16px 16px;
+    width: 568px;
+    height: 56px;
+  }
+  .formulaWrapper {
+    flex-direction: row;
+    gap: 28px;
+  }
+  .submitButton {
+    padding: 16px 50px;
+    width: 141px;
+    height: 56px;
+  }
+  .normaFormula {
+    width: 170px;
+  }
+  .normaTextArea {
+    width: 568px;
+    height: 128px;
+  }
+  .amountField {
+    width: 568px;
+  }
+
+  .svgExclamation {
+    width: 22px;
+    height: 22px;
+  }
+
+  .volumeWrapper {
+    width: 568px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    width: 840px;
+  }
+  .rightDesktopWrapper {
+    padding-top: 86px;
+  }
+  .settingsWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 1.33333;
+  }
+  .input {
+    width: 400px;
+    height: 56px;
+  }
+
+  .normaTextArea {
+    width: 400px;
+    height: 152px;
+  }
+  .amountField {
+    width: 400px;
+  }
+  .volumeWrapper {
+    width: 400px;
+  }
+}
